@@ -1,4 +1,4 @@
-# Code-and-data-for-the-Confounder-MNAR-paper
+# Code-for-the-Confounder-MNAR-paper
 This is the computer programs and data for 
 "Identification and Estimation of Causal Effects with Confounders Missing Not at Random” 
 by Jian Sun and Bo Fu.
