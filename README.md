@@ -17,10 +17,4 @@ In the 'Simulation' folder:
 
 '5_ATE_Sen.R' contains the codes in Section 11.4 of the supplementary material for investigating the robustness of the WEE-based causal effect estimators when the treatment-independent missing assumption is violated.
 
-################
 
-In the 'Real data analysis' folder:
-
-'mergeddata.csv' contains the preprocessed NHANES data for the real data analysis.
-
-'RDA_Code.R' contains codes in Section 5 of the main text for illustrating the average treatment effect of marital status on mental health with NHANES data. 
