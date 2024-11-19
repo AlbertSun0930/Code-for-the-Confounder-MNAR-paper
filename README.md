@@ -21,6 +21,4 @@ In the 'Simulation' folder:
 
 In the 'Real data analysis' folder:
 
-'mergeddata.csv' contains the preprocessed NHANES data for the real data analysis.
-
 'RDA_Code.R' contains codes in Section 5 of the main text for illustrating the average treatment effect of marital status on mental health with NHANES data. 
