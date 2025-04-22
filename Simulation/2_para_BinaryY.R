@@ -288,19 +288,20 @@ MIcicr_mcse2000 <- sqrt(MIcicr2000*(1-MIcicr2000)/MCN)
 
 
 
-t5001 <- rbind(WEEbias500,WEEhstd500,WEEstd500,WEEcicr500,CCbias500,CChstd500,CCstd500,CCcicr500,MIbias500,MIhstd500,MIstd500,MIcicr500)
-t5002 <- rbind(WEEbias_mcse500, rep(NA,5), WEEstd_mcse500,WEEcicr_mcse500,
-               CCbias_mcse500,CChstd_mcse500,CCstd_mcse500,CCcicr_mcse500,
-               MIbias_mcse500,MIhstd_mcse500,MIstd_mcse500,MIcicr_mcse500)
-t500 <- data.frame(t5001[, 1], t5002[, 1], t5001[, 2], t5002[, 2],t5001[, 3], t5002[, 3],
-                   t5001[, 4], t5002[, 4],t5001[, 5], t5002[, 5])
+
+t500mean <- rbind(WEEbias500,WEEstd500,WEEcicr500,CCbias500,CCstd500,CCcicr500,MIbias500,MIstd500,MIcicr500)
+t500mcsd <- rbind(WEEbias_mcse500, WEEstd_mcse500,WEEcicr_mcse500,
+                  CCbias_mcse500,CCstd_mcse500,CCcicr_mcse500,
+                  MIbias_mcse500,MIstd_mcse500,MIcicr_mcse500)
+t500 <- data.frame(t500mean[, 1], t500mcsd[, 1], t500mean[, 2], t500mcsd[, 2],t500mean[, 3], t500mcsd[, 3],
+                   t500mean[, 4], t500mcsd[, 4], t500mean[, 5], t500mcsd[, 5])
 as.matrix( round(t500,3))
 
 
-t20001 <- rbind(WEEbias2000,WEEhstd2000,WEEstd2000,WEEcicr2000,CCbias2000,CChstd2000,CCstd2000,CCcicr2000,MIbias2000,MIhstd2000,MIstd2000,MIcicr2000)
-t20002 <- rbind(WEEbias_mcse2000, rep(NA,5),WEEstd_mcse2000,WEEcicr_mcse2000,
-                CCbias_mcse2000,CChstd_mcse2000,CCstd_mcse2000,CCcicr_mcse2000,
-                MIbias_mcse2000,MIhstd_mcse2000,MIstd_mcse2000,MIcicr_mcse2000)
-t2000 <- data.frame(t20001[, 1], t20002[, 1], t20001[, 2], t20002[, 2],t20001[, 3], t20002[, 3],
-                    t20001[, 4], t20002[, 4],t20001[, 5], t20002[, 5])
+t2000mean <- rbind(WEEbias2000,WEEstd2000,WEEcicr2000,CCbias2000,CCstd2000,CCcicr2000,MIbias2000,MIstd2000,MIcicr2000)
+t2000mcsd <- rbind(WEEbias_mcse2000, WEEstd_mcse2000,WEEcicr_mcse2000,
+                   CCbias_mcse2000,CCstd_mcse2000,CCcicr_mcse2000,
+                   MIbias_mcse2000,MIstd_mcse2000,MIcicr_mcse2000)
+t2000 <- data.frame(t2000mean[, 1], t2000mcsd[, 1], t2000mean[, 2], t2000mcsd[, 2],t2000mean[, 3], t2000mcsd[, 3],
+                    t2000mean[, 4], t2000mcsd[, 4], t2000mean[, 5], t2000mcsd[, 5])
 as.matrix( round(t2000,3))
